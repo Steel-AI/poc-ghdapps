@@ -16,7 +16,7 @@ Conventions: resources named `poc-ghdapps-*`; tags owner, purpose, expiry on eve
 2. `app/index.html`: the app bundle from Cowork (the spike used a placeholder page with links to `/.auth/me` and `/.auth/logout`).
 3. `platform/README.md`: engineering owns the wrapper; `app/` is replaced wholesale by each publish; never hand-edit it.
 4. `.github/CODEOWNERS`: `/app/` owner and deputy; `/platform/` and `/.github/` engineering.
-5. `.github/copilot-instructions.md` and `.github/pull_request_template.md` from the template.
+5. `.github/copilot-instructions.md` and `.github/PULL_REQUEST_TEMPLATE.md` from the template.
 6. Settings, Rules, Rulesets, New branch ruleset `protect-main`: Active; target default branch; Require a pull request before merging (1 approval); Block force pushes; Automatically request Copilot code review. In the GHD org, also Require review from the owning team.
 7. Settings, Code security: Secret scanning and Push protection on.
 8. Settings, Environments, New environment `production`: Required reviewers = owner and deputy; Deployment branches and tags = Selected, add `main`.
